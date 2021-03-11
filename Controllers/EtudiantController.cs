@@ -56,7 +56,7 @@ namespace gestion_des_étudiants.Controllers
         }
         #endregion
 
-        [Authorize(Roles ="admin")]
+        /*[Authorize(Roles ="admin")]*/
 
         #region GET: EtudiantController/Create
         [Authorize]
@@ -79,7 +79,7 @@ namespace gestion_des_étudiants.Controllers
             return View(net);
         }
         #endregion
-
+        /*[Authorize(Roles = "admin")]*/
         #region GET: EtudiantController/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -105,7 +105,7 @@ namespace gestion_des_étudiants.Controllers
             return View(nep);
         }
         #endregion
-
+        /*[Authorize(Roles = "admin")]*/
         #region GET: EtudiantController/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

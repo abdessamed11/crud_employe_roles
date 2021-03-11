@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace gestion_des_étudiants.Controllers
 {
-    [Authorize(Roles = "admin")]
+    /*[Authorize(Roles = "admin")]*/
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
